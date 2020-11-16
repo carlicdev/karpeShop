@@ -8,16 +8,32 @@ const Navbar = () => {
 
     return (
         <div className='bg-green-600 text-gray-200 shadow'>
-            <div className='flex justify-center p-3'>
+            <div className='flex justify-center content-center p-3'>
                 <div className='text-xl ml-2 mr-auto'>LOGO</div>
 
                 {/* hidden links in smaller viewports */}
-                <div className='hidden lg:inline mx-auto'>
+                <div className='hidden lg:inline mr-5'>
                     <ul>
-                        <li className='inline mx-3'>Uno</li>
-                        <li className='inline mx-3'>Uno</li>
-                        <li className='inline mx-3'>Uno</li>
-                        <li className='inline mx-3'>Uno</li>
+                        <li className='inline mx-5 font-medium'>
+                            <Link to='/about'>
+                                Nosotros
+                            </Link>
+                        </li>
+                        <li className='inline mx-5 font-medium'>
+                            <Link to='/contact'>
+                                Contacto
+                            </Link>
+                        </li>
+                        <li className='inline mx-5 font-medium'>
+                            <Link to='/about'>
+                                Nosotros
+                            </Link>
+                        </li>
+                        <li className='inline mx-5 font-medium'>
+                            <Link to='/contact'>
+                                Contacto
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
